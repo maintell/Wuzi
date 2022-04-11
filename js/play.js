@@ -4,24 +4,24 @@ var play = play||{};
 
 play.init = function (){
 	
-	play.my				=	1;				//玩家方
+	play.my			=	1;				//玩家方
 		
 	play.nowManKey		=	false;			//现在要操作的棋子
-	play.pace 			=	[];				//记录每一步
+	play.pace 		=	[];				//记录每一步
 	play.isPlay 		=	true ;			//是否能走棋
-	play.bylaw 			= 	com.bylaw;
-	play.show 			= 	com.show;
+	play.bylaw 		= 	com.bylaw;
+	play.show 		= 	com.show;
 	play.showPane 		= 	com.showPane;
 	play.isOffensive	=	true;					//是否先手
-	play.depth			=	play.depth || 2;		//搜索深度
-	play.random			=	play.random || 2;		//评估的时候随机值大小	
+	play.depth		=	play.depth || 2;		//搜索深度
+	play.random		=	play.random || 2;		//评估的时候随机值大小	
 	play.isOffense		=	play.isOffense || true; //玩家先手还是后手
-	play.regretCount	=	3;
+	play.regretCount	=	999;
 	
-	play.isFoul			=	false;	//是否犯规
+	play.isFoul		=	false;	//是否犯规
 	
 	com.pane.isShow		=	false;			//隐藏方块
-	com.childList.length		=	2		//删掉所有棋子显示
+	com.childList.length	=	2		//删掉所有棋子显示
 	
 	
 	//初始化棋盘
